@@ -59,7 +59,7 @@ class WPMGame {
    #render() {
 	  this.el.wordsWindow.innerHTML = ''
 	  this.currentWords.forEach((word, idx) => {
-		 if (idx === 0) this.el.wordsWindow.innerHTML += `<span class="first__word">${word}<span> `
+		 if (!idx) this.el.wordsWindow.innerHTML += `<span class="first__word">${word}<span> `
 		 else this.el.wordsWindow.innerHTML += `${word} `
 	  })
 	  this.firstWord = document.querySelector('.first__word')
