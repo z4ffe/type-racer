@@ -35,7 +35,7 @@ class WPMGame {
 
    #modalResult() {
 	  this.el.modalWpm.textContent = `${this.right}`
-	  this.el.modalAcc.textContent = `${Math.round(this.afterGameArr.join('').length / this.keyPressed * 100)}%`
+	  this.el.modalAcc.textContent = `${Math.round(+this.afterGameArr.join('').length / this.keyPressed * 100)}%`
 	  this.el.modalTotal.textContent = `${this.right + this.wrong}`
 	  this.el.modalWrong.textContent = `${this.wrong}`
 	  this.el.modalWrapper.classList.toggle('modal-visible')
@@ -53,7 +53,7 @@ class WPMGame {
 		 this.el.timer.innerHTML = `1<span class="dots">:</span>00`
 		 this.#modalResult()
 		 this.reset()
-	  }, 100)
+	  }, 60500)
    }
 
    #render() {

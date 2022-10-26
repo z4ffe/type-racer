@@ -251,7 +251,13 @@ body {
   p:not(:first-child) {
     margin-top: 5px;
   }
+
+  .facebook {
+    margin-top: 70px;
+    align-self: center;
+  }
 }
+
 
 
 .modal-visible {
