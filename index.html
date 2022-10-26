@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>WPM Counter</title>
+</head>
+<body>
+<div class="wrapper">
+    <h1 class="title">TYPE RACER</h1>
+    <div class="timer">1<span>:</span>00</div>
+    <div class="wrapper__words">
+        <div class="words">
+            <div class="words__window"></div>
+        </div>
+    </div>
+    <label class="user-label">
+        <input autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text"
+               class="user-input" disabled placeholder="PRESS START">
+    </label>
+    <div class="buttons">
+        <button id="start">START</button>
+        <button id="reset">RESET</button>
+    </div>
+</div>
+<div class="modal__wrapper">
+    <div class="modal">
+        <div class="modal__close">×</div>
+        <h2>RESULTS</h2>
+        <p>WPM: <span class="wpm"></span></p>
+        <p>Accuracy: <span class="accuracy"></span></p>
+        <p>Total words: <span class="total"></span></p>
+        <p>Total wrong words: <span class="wrong"></span></p>
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+</div>
+<script src="assets/js/app.js" type="module"></script>
+</body>
+</html>
